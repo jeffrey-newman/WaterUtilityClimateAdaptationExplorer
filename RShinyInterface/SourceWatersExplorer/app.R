@@ -228,7 +228,7 @@ server <- function(input, output, session) {
    })
    
    pressures_choice <- observeEvent(input$pressures_next, {
-     updateTabsetPanel(session,"main_panel","Level of detailex")
+     updateTabsetPanel(session,"main_panel","Level of detail")
    })
    
    level_of_detail_scan <- observeEvent(input$scan_next, {
