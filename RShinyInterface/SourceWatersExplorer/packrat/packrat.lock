@@ -3,6 +3,11 @@ PackratVersion: 0.4.8.1
 RVersion: 3.4.2
 Repos: CRAN=https://cran.rstudio.com/
 
+Package: BH
+Source: CRAN
+Version: 1.66.0-1
+Hash: 4cc8883584b955ed01f38f68bc03af6d
+
 Package: DBI
 Source: CRAN
 Version: 0.8
@@ -35,6 +40,17 @@ Source: CRAN
 Version: 0.2.0
 Hash: e8805df54c65ac96d50235c44a82615c
 
+Package: bindr
+Source: CRAN
+Version: 0.1.1
+Hash: 76578c5f543a6ecbc1365d6445f9ebf7
+
+Package: bindrcpp
+Source: CRAN
+Version: 0.2
+Hash: 7f7dcd1dc351f84798fd3dc4eb8a0e78
+Requires: Rcpp, bindr, plogr
+
 Package: cli
 Source: CRAN
 Version: 1.0.0
@@ -51,6 +67,18 @@ Source: CRAN
 Version: 0.6.13
 Hash: cfce0bc7ed5ba0cdc47182698fae1d24
 
+Package: dplyr
+Source: CRAN
+Version: 0.7.4
+Hash: a5253525f8dd74776fe82eb368060729
+Requires: BH, R6, Rcpp, assertthat, bindrcpp, glue, magrittr,
+    pkgconfig, plogr, rlang, tibble
+
+Package: glue
+Source: CRAN
+Version: 1.2.0
+Hash: 381e42baedecc633c0e547a0c7ca9de7
+
 Package: htmltools
 Source: CRAN
 Version: 0.3.6
@@ -59,8 +87,8 @@ Requires: Rcpp, digest
 
 Package: httpuv
 Source: CRAN
-Version: 1.3.5
-Hash: ecd2d1c0cac94fe968398551b57d7fb2
+Version: 1.3.6.2
+Hash: 5623ebc39ca022b8d2ec94a269bd8363
 Requires: Rcpp
 
 Package: jsonlite
@@ -88,6 +116,16 @@ Source: CRAN
 Version: 1.2.1
 Hash: 21190605f9f425d625a09c8259860bae
 Requires: cli, crayon, rlang, utf8
+
+Package: pkgconfig
+Source: CRAN
+Version: 2.0.1
+Hash: 0dda4a2654a22b36a715c2b0b6fbacac
+
+Package: plogr
+Source: CRAN
+Version: 0.1-1
+Hash: fb19215402e2d9f1c7f803dcaa806fc2
 
 Package: purrr
 Source: CRAN
